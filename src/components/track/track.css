@@ -1,0 +1,63 @@
+.track-section {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.track-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.track-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.track-card {
+    flex: 1 1 calc(100% - 40px);
+    max-width: 350px;
+    background-color: #f3f4f6;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.track-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.track-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    color: #ec4899;
+}
+
+.track-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.track-text {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .track-card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (min-width: 900px) {
+    .track-card {
+        flex: 1 1 calc(33.33% - 40px);
+    }
+}
